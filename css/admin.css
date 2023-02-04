@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+}
+.wrapper {
+  /*border: 1px solid black;*/
+  padding: 1%;
+  margin: 0 auto;
+  width: 80%;
+}
+.text-center {
+  text-align: center;
+}
+/*CSS for Footer*/
+.footer {
+  background-color: #c7a7ba;
+  color: white;
+}
+
+/*CSS for Menu*/
+.menu ul li a {
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+.wrapper li {
+  display: inline;
+  padding: 1%;
+}
+.menu {
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #c499c3;
+  font-weight: bold;
+}
+.menu ul li a:hover {
+  color: #a93ca5;
+}
+
+/*CSS for Menu Content*/
+.clear-fix             /*ovaj dio je da nam blokovi budu u redu */ {
+  float: none;
+  clear: both;
+}
+.menu-content {
+  padding: 3% 0;
+  background-color: #ebfcfa;
+}
+.col-4 {
+  width: 18%;
+  background-color: white;
+  margin: 1%;
+  padding: 2%;
+  text-align: center;
+  float: left;
+}
+
+.tbl-full {
+  width: 100%;
+}
+table tr td {
+  padding: 1%;
+}
+table tr th {
+  text-align: left;
+  border-bottom: 1px solid black;
+  padding: 1%;
+}
+
+/*CSS for forms Admin*/
+.tbl_form_admin{
+  width:30%;
+  
+}
+.btn-addAdmin
+{
+  background-color: #27ae60;
+  color:black;
+  padding: 2%;
+  border: 1px solid white;
+  width:30%;
+}
+/*buttons Add,Update,Delete*/
+table tr a {
+  text-decoration: none;
+}
+.wrapper a {
+  text-decoration: none;
+}
+.btn-add {
+  color: white;
+  background-color: #2980b9;
+  padding: 1%;
+}
+.btn-add:hover {
+  background-color: #3498db;
+  border-radius: 10%;
+}
+
+.btn-update {
+  color: black;
+  background-color: #27ae60;
+  padding: 1%;
+  border: none;
+  
+}
+.btn-update:hover {
+  background-color: #2ecc71;
+}
+
+.btn-delete {
+  
+  background-color: #c0392b;
+  padding: 1%;
+  color:white;
+  
+}
+.btn-delete:hover {
+  background-color: #e74c3c;
+}
+
+.btn-change{
+  color: white;
+  background-color: #2980b9;
+  padding: 1%;
+  border: none;
+}
+.btn-change:hover{
+  background-color:  #3498db;;
+}
+.success{
+  color:#2ecc71;
+  margin-top:-30px;
+  text-align:center;
+}
+.error{
+  color:#c0392b;
+   margin-top:-30px;
+  text-align:center;
+
+}
+
+.error-mess{
+  color:#c0392b;
+  margin-top:-30px;
+  
+
+}
+/* CSS for Login*/
+
+
+.login{
+  text-align: center;
+  margin-top: 100px;
+  
+}
+.btn_log{
+  background-color: #2980b9;
+  color: white;
+  width: 5%;
+  height: 35px;
+
+}
