@@ -104,7 +104,7 @@ else{
                     <?php
                 }
             }
-            else
+            else 
             {
                 //Hrana nije dostupna
                 echo "<div class='error'>Food not Available.</div>";
