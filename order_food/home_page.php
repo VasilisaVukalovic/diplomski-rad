@@ -71,8 +71,8 @@ include './header.php';
         </div>
         <div class="box-footer">
             <h3>Address</h3>
-            <p>Vuka Karadzica 10</p>
-            <p>Trebinje 89101</p>
+            <p>Vuka Karadzica 30</p>
+            <p>Lukavica 71123</p>
             <p>Bosna i Hercegovina</p>
             <p>fooddelivery@gmail.com</p>
             <p>+387 66 123 098</p>
@@ -94,6 +94,6 @@ include './header.php';
         </div>
     </div>
 
-    <div class="create">Food Delicious 2023,<span> All rights reserved</span></div>
+    <div class="create">Vasilisa Vukalovic Diplomski rad 2023,<span> All rights reserved</span></div>
 </section>
 <!--footer end--> 

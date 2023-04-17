@@ -53,9 +53,6 @@ else
                     <?php
                 }
                 ?>
-                  
-                  
-
                   <div class="content" style="margin-top:10px;">
                   <a href="product_view.php?id=<?php echo $id;?>" style="font-size: 20px; color: var(--primary-color);"><?php echo $food_name;?></a>
             </div>

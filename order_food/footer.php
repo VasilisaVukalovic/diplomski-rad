@@ -48,6 +48,6 @@
         </div>
     </div>
 
-    <div class="create">Food Delicious 2023,<span> All rights reserved</span></div>
+    <div class="create">Vasilisa Vukalovic Diplomski rad 2023,<span> All rights reserved</span></div>
 </section>
 <!--footer end--> 

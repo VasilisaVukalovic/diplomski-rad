@@ -1,52 +1,49 @@
 :root {
-    --primary-color: #c98d83;
-    --secondary-color: #783b31;
-    --bg: #f2f1ec;
-  
-    --black: #000;
-    --white: #fff;
-    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  }
-body{
-    background-image:  url("./foods_image/home.jpg");
-}
-*{
-    font-family: 'Times New Roman', Times, serif;
-}
-.logo{
-    font-size:2rem;
-    
-    color:var(--secondary-color);
-   font-family: 'Dancing Script', cursive;
-   text-decoration: none;
+  --primary-color: #c98d83;
+  --secondary-color: #783b31;
+  --bg: #f2f1ec;
 
+  --black: #000;
+  --white: #fff;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
-.logo i{
-    color:black;
+body {
+  background-image: url("./foods_image/home.jpg");
 }
-p{
-    font-size: 60px;
-    color: var(--secondary-color);
-   
-    margin-left:35px;
-   
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+.logo {
+  font-size: 2rem;
 
+  color: var(--secondary-color);
+  font-family: "Dancing Script", cursive;
+  text-decoration: none;
 }
-.paragraf{
-    font-size:18px;
-    text-align:inherit;
+.logo i {
+  color: black;
 }
-button{
-    border-radius:20px; 
-    margin-left:30px;
-     background-color:transparent; 
-    border:2px solid white;
-    color:var(--secondary-color);
-    width:10%;
-    height:30px
+p {
+  font-size: 60px;
+  color: var(--secondary-color);
+
+  margin-left: 35px;
 }
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 10%;
+.paragraf {
+  font-size: 18px;
+  text-align: inherit;
+}
+button {
+  border-radius: 20px;
+  margin-left: 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: var(--secondary-color);
+  width: 10%;
+  height: 30px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10%;
 }

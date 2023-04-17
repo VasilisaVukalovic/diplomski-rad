@@ -5,7 +5,7 @@
 
    <?php echo $_SESSION['message']; unset($_SESSION['message']);?>
 
-<div class="checkout" style="margin-top:10%; border:1px solid grey;">
+<div class="checkout">
 
 <div class="card-checkout">
 

@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #c98d83;
-  --secondary-color: #783b31;
-  --bg: #f2f1ec;
-
-  --black: #000;
-  --white: #fff;
+  --primary-color: #eca72c;
+  --secondary-color: #d62828;
+  --bg: #d62828;
+  --brown: #fff;
+  --black: black;
+  --white: #ffffff;
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +80,7 @@ section {
   margin: 0 1rem;
 }
 .header .navbar a:hover {
-  color: var(--primary-color);
+  color: var(--white);
   border-bottom: 1px solid var(--primary-color);
 }
 
@@ -279,22 +279,34 @@ section {
 
 .product .box-container-products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 0.2fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 
 .product .box-container-products .box-product {
-  width: 80%;
+  width: 100%;
   height: 100%;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--bg);
   padding: 10px;
+  border-radius: 6px;
 }
 .product .box-container-products .box-product .imagee {
   height: 90%;
+  border-radius: 6px;
 }
 .product .box-container-products .box-product .imagee img {
   width: 100%;
   height: 260px;
+}
+.imagee > img {
+  border-radius: 6px;
+}
+#product > div > div > div > div.content > a {
+  display: flex;
+  flex-direction: column;
+  color: var(--bg) !important;
+  text-align: center;
+  justify-content: center;
 }
 /*product food end*/
 
@@ -316,14 +328,13 @@ section {
 .product-view .box-container-products-view .box-product-view {
   width: 80%;
   height: 100%;
-
   padding: 10px;
 }
 .product-view .box-container-products-view .box-product-view .imagee-view {
   height: 90%;
 }
 .product-view .box-container-products-view .box-product-view .imagee-view img {
-  width: 160%;
+  width: 120%;
   height: 280px;
 }
 /*product view end*/
@@ -346,10 +357,10 @@ section {
   padding: 1rem 0;
 }
 
-.footer .box-container-footer .box-footer p {
+.footer .box-container-footer {
   font-size: 1.5rem;
   line-height: 2;
-  color: #444;
+  color: var(--white);
   padding: 0.5rem 0;
 }
 .footer .box-container-footer .box-footer li {
@@ -359,7 +370,7 @@ section {
   padding: 0.5rem 0;
 }
 .footer .box-container-footer .box-footer li a {
-  color: #444;
+  color: var(--white);
 }
 
 .footer .box-container-footer .box-footer .share {
@@ -394,7 +405,7 @@ section {
 .footer .create {
   text-align: center;
   margin-top: 3rem;
-  padding-top: 3rem;
+  padding-top: 1rem;
   font-size: 2rem;
   text-transform: capitalize;
   color: var(--primary-color);
@@ -592,13 +603,13 @@ section {
   cursor: pointer;
 }
 .dropbtn:hover {
-  color: var(--primary-color);
+  color: var(--white);
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--primary-color);
   min-width: 160px;
   z-index: 1;
 }
@@ -613,8 +624,10 @@ section {
 .dropdown:hover .dropdown-content {
   display: block;
   color: var(--primary-color);
+  background-color: var(--bg);
 }
-
+.dropdown a:hover {
+}
 /*QTY*/
 .qtybtn {
   display: flex;
@@ -678,7 +691,7 @@ section {
   background-color: antiquewhite;
   margin-left: 25px;
 
-  width: 100%;
+  width: 95%;
   box-shadow: 0 1rem 2rem rgba(0, 1, 0.5, 0.4);
   padding: 10px;
 }
@@ -720,28 +733,38 @@ table td input {
   padding: 20px;
 }
 #btn-procced-check {
-  border: 1px solid var(--secondary-color);
-  padding: 5px;
-  width: 20rem;
-  height: 3rem;
-  margin-left: 40%;
+  border: 1px solid var(--bg);
+  padding: 18px 0px;
   color: var(--secondary-color);
   font-size: 15px;
 }
-
+#btn-procced-check > a {
+  padding: 20px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  background-color: green;
+  opacity: 0.6;
+  border-radius: 8px;
+  border: 1px solid var(--black);
+}
+#btn-procced-check > a:hover {
+  opacity: 1;
+}
 /*checkout*/
 .checkout {
   margin-top: 10%;
   position: relative;
-
-  padding: 20px;
+  padding: 20px 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   border: 1px solid grey;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   margin: 80px;
+  border-radius: 8px;
 }
+
 .checkout.card-checkout {
   position: relative;
 
@@ -757,13 +780,21 @@ table td input {
   font-size: 18px;
 }
 #input {
-  border: 1px solid #777;
+  border: 2px solid #777;
   width: 600px;
   padding: 5px;
   margin-top: 5px;
 }
 .checkout .card-checkout .detail {
   padding-top: 12px;
+}
+.card-checkout #input,
+#textarea {
+  border-radius: 6px;
+}
+.card-checkout #input:hover,
+#textarea:hover {
+  border: 2px solid green;
 }
 .checkout .card-checkout .detail #label {
   margin-top: 10px;
@@ -785,7 +816,9 @@ table td input {
 .card-checkout .detail .box .image img {
   width: 70px;
 }
-
+.box {
+  border-radius: 8px;
+}
 .row {
   text-align: left;
   border-bottom: none;
@@ -809,22 +842,31 @@ table td input {
 }
 #btn-confirm {
   background-color: blue;
+  opacity: 0.6;
   padding: 10px;
   color: white;
   font-size: 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+#btn-confirm:hover {
+  cursor: grab;
+  opacity: 1;
 }
 .card-empty {
   margin-top: 20%;
   text-align: center;
   font-size: 30px;
-
   padding: 20px;
   margin-right: 20px;
   margin-left: 20px;
 
   box-shadow: 0 1rem 2rem rgba(1, 0, 0, 0.4);
 }
-
+.desc {
+  margin-left: 10px;
+  padding: 10px;
+}
 .table_td {
   padding: 10px;
 }
@@ -839,6 +881,33 @@ table td input {
   /* color: var(--secondary-color); */
   color: white;
   font-family: "Dancing Script", cursive;
+}
+.addToCart {
+  font-size: 20px;
+  width: 200%;
+  height: 5rem;
+  background-color: var(--primary-color);
+  border: 1px solid black;
+  border-radius: 8px;
+}
+.addToCart:hover {
+  cursor: grab;
+  transition: 0.4s ease;
+  background-color: green;
+}
+.increment-btn,
+.decrement-btn {
+  width: 30%;
+  height: 5rem;
+  color: var(--secondary-color);
+  font-size: 25px;
+  font-weight: bold;
+}
+.increment-btn:hover,
+.decrement-btn:hover {
+  cursor: grab;
+  background-color: cornflowerblue;
+  color: white;
 }
 .continue_shoping {
   text-align: center;
@@ -882,6 +951,7 @@ a:hover {
   place-items: center;
   border-radius: 50%;
 }
+
 .searchBox:hover > .searchText {
   width: 20rem;
   padding: 1rem;
@@ -896,7 +966,7 @@ a:hover {
   font-size: 18px;
   margin-left: 12px;
   color: #000;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--white);
   padding: 10px;
   border-radius: 6px;
 }
@@ -904,6 +974,6 @@ a:hover {
 .logout-button:hover {
   background-color: whitesmoke;
   border: 1px solid var(--bg);
-  background-color: cornflowerblue;
+  background-color: var(--primary-color);
   color: white;
 }

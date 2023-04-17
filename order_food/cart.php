@@ -139,13 +139,13 @@ if(isset($_SESSION['user']))
 <?php if($count>0){
         ?>
         <tfoot>
-        <tr style="height:4rem;">
+        <tr style="height:8rem;">
                 
-        <td colspan="4" style="text-align:left; font-size:20px;">Total</td>
+        <td colspan="4" style="text-align:left; font-size:20px; padding-left:20px;">Total</td>
         <td id="total"><?php echo $sumPrice;?>KM</td>
         
         
-        <td colspan="3"><button id="btn-procced-check" name="btn-check" value=""><a href="checkout.php" style="color:var(--secondary-color)">Procced to checkout</a></button></td>
+        <td colspan="3"><button id="btn-procced-check" name="btn-check" value=""><a href="checkout.php">Procced to checkout</a></button></td>
         </tr>
         
         

@@ -114,12 +114,9 @@ if(isset($_GET['id']))
            
            <span class="qtybtn">
             <div class="container-qty">
-            <input type="button" name="decrement-btn" class="decrement-btn" onclick="decrementValue()" value="-" style="width: 30%; height: 5rem; color: var(--secondary-color); font-size: 30px;" />
-                <input type="text"  name="quantity" value="1" maxlength="2" max="10" size="1" class="number" id="number" style="height: 5rem; font-size: 20px; text-align: center;" />
-                <input type="button" name="increment-btn" class="increment-btn" onclick="incrementValue()" value="+"  style="width: 30%;height: 5rem;color: var(--secondary-color);font-size: 25px;font-weight: bold;"/>
-                
-
-                
+            <input type="button" name="decrement-btn" class="decrement-btn" onclick="decrementValue()" value="-"/>
+            <input type="text"  name="quantity" value="1" maxlength="2" max="10" size="1" class="number" id="number" style="height: 5rem; font-size: 20px; text-align: center;" />
+            <input type="button" name="increment-btn" class="increment-btn" onclick="incrementValue()" value="+"/>
             </div>
            
             <script>
@@ -157,7 +154,7 @@ if(isset($_GET['id']))
       
 
     <div class="button">
-    <button id="addToCart" class="addToCart" name="addCart" onclick="disable()" value="<?php echo $id;?>"  style="font-size:20px; width: 200%; height: 5rem; background-color:var(--primary-color);">Add to Cart</button>
+    <button id="addToCart" class="addToCart" name="addCart" onclick="disable()" value="<?php echo $id;?>">Add to Cart</button>
     </div>
     
     </span>
@@ -166,7 +163,7 @@ if(isset($_GET['id']))
 
 </div>
 </div>
-<div class="desc"  style="margin-left:10%; padding:10px;">
+<div class="desc"">
 
     
         <p style="font-size:40px; color:black; border-bottom:1px solid grey;text-transform:capitalize"><?php echo $food_name;?></p>
