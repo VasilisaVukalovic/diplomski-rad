@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #c98d83;
+    --secondary-color: #783b31;
+    --bg: #f2f1ec;
+  
+    --black: #000;
+    --white: #fff;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  * {
+    font-family: "Times New Roman", Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /*text-transform: capitalize;*/
+    outline: none;
+    border: none;
+    transition: 0.2s linear;
+  }
+body{
+    background-image:  url("../../userimage/delete_user.jpg");
+
+}
+.cartBox{
+border: 1px solid var(--primary-color);
+    padding: 10px;
+    width: 25%;
+   
+    /* min-height: 60%; */
+    align-items: center;
+    /* position: absolute; */
+    /* position: relative; */
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 0 2rem 1rem rgb(1 0 0 / 50%);
+    background-color: transparent;
+}
+.cartBox h2{
+    color:var(--secondary-color);
+    text-align:center;
+    padding: 20px;
+}
+.cartBox h2 span{
+    color:var(--primary-color);
+    
+}
+.cart{
+    font-size: 18px;
+    color:white;
+    padding:8px;
+    text-align: center;
+}
+.buttons{
+    margin-top:20px;
+}
+ .title{
+    margin-top: 18px;
+    margin-left: 5px;
+    
+    color: var(--secondary-color);
+}
+.yes a{
+    text-decoration:none;
+    color:white;
+    
+}
+.no a{
+    text-decoration:none;
+    color:white;
+    
+}
