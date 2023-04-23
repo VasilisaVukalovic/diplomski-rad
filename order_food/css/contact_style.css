@@ -63,12 +63,15 @@
 footer-main > span {
   height: auto;
 }
-.footer-soical {
+.footer-social {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
 }
 
-.footer-soical h3 {
+.footersocial h3 {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 500;
@@ -76,11 +79,13 @@ footer-main > span {
   margin: 0px;
   text-align: left;
 }
-.footer-soical h3 span {
+.footer-social h3 span {
   font-size: 14px;
   font-weight: 200;
 }
 .social-inner {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
   margin: auto;
@@ -106,6 +111,11 @@ footer-main > span {
 .social-inner ul li :hover {
   background: cornflowerblue;
   border-radius: 6px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
 }
 .form {
   width: 100%;
@@ -154,12 +164,10 @@ footer-main > span {
   border-radius: 6px;
 }
 
-.right-form > li:nth-child(1) {
-  margin-left: 30px;
-}
 .navbar a {
   text-decoration: none;
 }
+
 @media only screen and (min-width: 360px) and (max-width: 479px) {
   .map iframe {
     height: 150px;
@@ -179,10 +187,11 @@ footer-main > span {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
   }
-  .footer-soical h3 {
+
+  .footer-social h3 {
     font-size: 18px;
   }
-  .footer-soical h3 span {
+  .footer-social h3 span {
     font-size: 12px;
   }
 

@@ -38,6 +38,10 @@ html::-webkit-scrollbar-thumb {
 section {
   padding: 2rem 7%;
 }
+h3,
+span.title {
+  color: #000 !important;
+}
 .heading {
   text-align: center;
   color: var(--primary-color);
@@ -71,7 +75,7 @@ section {
   font-family: "Dancing Script", cursive;
 }
 .header .logo i {
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
   padding-right: 0.5rem;
 }
 .header .navbar a {
@@ -384,9 +388,13 @@ section {
   border-radius: 10%;
   background: var(--primary-color);
   color: var(--white);
-  margin-right: 0.3rem;
+  margin-right: 10px;
 }
 
+.share a:hover {
+  box-sizing: border-box;
+  border: 1px solid var(--white);
+}
 .footer .box-container-footer .box-footer a:hover {
   background: var(--secondary-color);
 }
@@ -976,4 +984,70 @@ a:hover {
   border: 1px solid var(--bg);
   background-color: var(--primary-color);
   color: white;
+}
+@media all and (max-width: 768px) {
+  #home,
+  #about,
+  #footer {
+    height: 480px;
+  }
+  #about {
+    padding: 58px 0px 0px 0px;
+    height: 100vh;
+  }
+  #about > .row {
+    padding-top: 50px;
+  }
+  #about > h1 {
+    margin: 0px;
+  }
+
+  section.footer > .box-container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  section.footer > .create {
+    margin: 0px;
+  }
+  section.footer > div.create > span {
+    color: black;
+  }
+
+  @media all and (max-width: 425px) {
+    .footer {
+      margin-top: 180px;
+    }
+
+    section.footer .box-container-footer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media all and (max-width: 320px) {
+    .header {
+      padding: 3px;
+      width: 320px;
+    }
+    .logo {
+      font-size: large;
+      width: min-content;
+    }
+    .about > div.row {
+      padding: 0px !important;
+    }
+    .about > div.row > p:nth-child(3) {
+      padding-bottom: 30px;
+    }
+
+    section.footer > .box-container-footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .create span {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

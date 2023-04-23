@@ -50,7 +50,7 @@ if(isset($_SESSION['user']))
 <!-- header -->
 
 <header class="header" id="header">
-    <a href="#" class="logo" id="logo"><i class="fas fa-bread-slice"></i>Food Delicious</a>
+    <a href="./index.php" class="logo" id="logo"><i class="fas fa-bread-slice"></i>Food Delicious</a>
 
     <nav class="navbar">
         <a href="./index.php">Home</a>
@@ -157,7 +157,7 @@ if(isset($_SESSION['user']))
 <!--header end-->
 
 
- <!-- shopping cart 
+ <!--shopping cart -->
  
 <div class="cart-items-container">
  
@@ -167,7 +167,7 @@ if(isset($_SESSION['user']))
  
  <div class="cart-item">
     
-     <span class="fas fa-times" ></span>
+     <span class="fas fa-times"></span>
      <img src="foods_image/burger.jpg" alt="">
      <div class="content">
          <h3>bakery item 1</h3>
@@ -185,6 +185,6 @@ if(isset($_SESSION['user']))
  
  </div>
  
-  shopping cart end-->
+  
 
  

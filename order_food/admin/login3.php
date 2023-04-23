@@ -49,7 +49,7 @@ header("Location: ../back-end/session.php");
 <!-- header -->
 
 <header class="header" style="border-bottom: 1px solid var(--secondary-color);">
-    <a href="#" class="logo" id="logo"><i class="fas fa-bread-slice"></i>Food Delicious</a>
+    <a href="#" class="logo" id="logo"><i class="fas fa-bread-slice"></i>Delicious Food</a>
 
     <nav class="navbar" id="navbar" style="margin-right: 60px; word-spacing: 15px;">
         <a href="../index.php">Home</a>

@@ -37,7 +37,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5">
-        <div class="footer-soical">
+        <div class="footer-social">
           <h3>KEEP ME INFORMED</h3>
         </div>
       </div>
