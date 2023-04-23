@@ -57,7 +57,7 @@ else
                   <a href="product_view.php?id=<?php echo $id;?>" style="font-size: 20px; color: var(--primary-color);"><?php echo $food_name;?></a>
             </div>
             <div class="price" style="margin-top:10px;">
-                <p style="font-size:18px; font-weight:bold;"><?php echo $price;?><?php echo $currency;?></p>
+                <p style="font-size:18px; font-weight:bold;"><?php echo $price;?> <?php echo $currency;?></p>
             </div>
             </div>
             </div>

@@ -117,8 +117,8 @@ if(isset($_SESSION['user']))
             
      </form>
      
-    
-    <a href="./cart.php" id="cart-btnn" name="cart-btnn" class="fas fa-shopping-cart" style="font-size:15px; margin-right:12px;color:black;"><span style="border:1px solid lightgreen; font-size:15px;margin-left:2px;color:white; background-color:lightgreen;"><label style="padding:4px;"><?php echo $row_count;?></label></span></a>
+
+    <a href="./cart.php" id="cart-btnn" name="cart-btnn" class="fas fa-shopping-cart" style="font-size:15px; margin-right:12px;color:black;"><span style="border:1px solid lightgreen; font-size:15px;margin-left:2px;color:white; background-color:var(--primary-color);"><label style="padding:4px;"><?php echo $row_count;?></label></span></a>
     <div id="menu-btn" class="fas fa-bars"></div>
     <span id="userr" style="font-size:18px; font-weight:bold;">
     <?php 
