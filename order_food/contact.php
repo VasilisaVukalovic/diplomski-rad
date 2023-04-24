@@ -2,11 +2,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 <title>Footer</title>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-<link href="css/contact_style.css" rel="stylesheet" type="text/css" />
+<link href="css/contact_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="footer">
@@ -24,9 +24,9 @@
             <h2><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; Address</h2>
             <p>&nbsp;Vuka Karadžića 30</p>
             <h2><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp; Contact Us</h2>
-            <P>&nbsp;057 342-788</P>
+            <p>&nbsp;057 342-788</p>
             <h2><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; E-Mail</h2>
-            <P> &nbsp; fooddelivery@gmail.com</P>
+            <p> &nbsp; fooddelivery@gmail.com</p>
           </div>
         </div>
       </div>
@@ -43,15 +43,14 @@
       </div>
       <div class="col-md-7">
         <div class="social-inner">
-          <ul>
-          
           <div class="right-form">
-            </form>
-            <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          </ul>
+            <ul>
+              <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

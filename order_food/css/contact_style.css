@@ -42,6 +42,7 @@
   margin: 0px;
   padding-top: 25px;
 }
+
 .contact-text h2 i {
   color: var(--primary-color);
 }
@@ -71,6 +72,7 @@ footer-main > span {
   height: auto;
 }
 .footer-social > h3 {
+  padding-top: 10px !important;
   color: #eca72c !important;
   font-weight: bold;
 }
@@ -95,6 +97,7 @@ footer-main > span {
   margin: auto;
   margin-top: 12px;
 }
+
 .social-inner ul {
   margin: 0px;
   padding: 0px;
@@ -142,7 +145,7 @@ footer-main > span {
 }
 .footer-bottom {
   width: 100%;
-  height: auto;
+  height: 28px !important;
   margin: auto;
   background: #272727;
 }
@@ -151,8 +154,8 @@ footer-main > span {
   font-size: 14px;
   color: #fff;
   font-weight: 100;
+  padding: 3px;
   margin: 0px;
-  padding: 8.5px 0;
   text-decoration: none;
 }
 .footer-bottom p span {
@@ -167,60 +170,98 @@ footer-main > span {
   padding-left: 10px;
   border-radius: 6px;
 }
-
+.right-form > ul > li > a {
+  margin-right: 10px;
+}
 .navbar a {
   text-decoration: none;
 }
-
-@media only screen and (min-width: 360px) and (max-width: 479px) {
-  .map iframe {
-    height: 150px;
-  }
+@media all and (max-width: 768px) {
   .contact-text {
-    padding: 15px;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
-  .contact-text h1 {
-    font-size: 24px;
-    padding-bottom: 10px;
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: inherit;
   }
   .contact-text h2 {
-    font-size: 18px;
-    padding-top: 10px;
-  }
-  .contact-text p {
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
+    display: flex;
+    flex-direction: row;
   }
 
-  .footer-social h3 {
-    font-size: 18px;
+  .col-md-4,
+  h2,
+  h2 > p {
+    display: flex;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: inherit;
+    justify-content: center;
   }
-  .footer-social h3 span {
-    font-size: 12px;
+  .contact-text > h1 {
+    display: flex;
+    justify-content: center;
   }
-
-  .social-inner ul li {
-    float: none;
-    display: inline-block;
+  body > div.footer > div > div > div > div.col-md-4 > div > p {
+    display: flex;
+    justify-content: center;
   }
-  .social-inner ul li a {
-    font-size: 10px;
-    padding: 5px 10px;
+  .container > .row {
+    display: flex;
+    justify-content: center;
   }
-  .form-style1 {
-    width: 260px;
-    padding-left: 10px;
-    margin-top: 0px;
-    font-size: 12px;
+  .social-inner {
+    width: 700px;
   }
-  .footer-bottom {
-    height: 60px;
+  .social-inner > .right-form > ul > li {
+    padding: 10px;
   }
-  .footer-bottom p {
-    font-size: 12px;
-    text-align: center;
+  .footer-social {
+    margin-left: 220px;
   }
-  .pull-right {
-    float: none;
+  .footer-main {
+    width: 768px;
+  }
+  @media all and (max-width: 425px) {
+    body {
+      width: fit-content;
+    }
+    .header {
+      width: auto;
+    }
+    .footer-main {
+      width: auto;
+    }
+    .footer-social {
+      margin-left: 0px;
+    }
+    .container > .row {
+      padding-top: 0px;
+      padding-bottom: 11px;
+    }
+  }
+  @media all and (max-width: 375px) {
+    .footer {
+      height: 795px;
+    }
+    .contact-text {
+      padding-top: 50px;
+    }
+  }
+  }
+  @media all and (max-width: 325px) {
+    .footer {
+      height: 972px;
+    }
+    .contact-text {
+      padding-top: 150px;
+    }
   }
 }

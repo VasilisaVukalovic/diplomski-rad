@@ -323,7 +323,7 @@ span.title {
 .product-view .box-container-products-view {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  gap: 2rem;box-container-foo
   border: 1px solid var(--secondary-color);
   box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.7);
   height: 45rem;
@@ -350,7 +350,8 @@ span.title {
 }
 .footer .box-container-footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 
@@ -890,6 +891,10 @@ table td input {
   color: white;
   font-family: "Dancing Script", cursive;
 }
+.button {
+  padding-right: 72px;
+  border-radius: 8px;
+}
 .addToCart {
   font-size: 20px;
   width: 200%;
@@ -901,7 +906,9 @@ table td input {
 .addToCart:hover {
   cursor: grab;
   transition: 0.4s ease;
-  background-color: green;
+  background-color: var(--secondary-color);
+  border-color: var(--primary-color);
+  color: var(--white)
 }
 .increment-btn,
 .decrement-btn {
@@ -914,7 +921,7 @@ table td input {
 .increment-btn:hover,
 .decrement-btn:hover {
   cursor: grab;
-  background-color: cornflowerblue;
+  background-color: var(--primary-color);
   color: white;
 }
 .continue_shoping {
@@ -989,6 +996,21 @@ a:hover {
   .product {
     margin-top: 10% !important;
   }
+  .button {
+    padding-right: 0px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .box-container-products-view {
+    height: 410px !important;
+  }
+  .message {
+    margin-top: 65px;
+    margin-left: 150px;
+  }
+  .dropdown-content {
+    z-index: 1;
+  }
 }
 @media all and (max-width: 768px) {
   #home,
@@ -1026,8 +1048,11 @@ a:hover {
   }
 
   @media all and (max-width: 425px) {
+    .product-view .box-container-products-view {
+      grid-template-columns: 1fr;
+    }
     .footer {
-      margin-top: 180px;
+      margin-top: 200px;
     }
     .product {
       margin-top: 15% !important;
@@ -1035,6 +1060,23 @@ a:hover {
     section.footer .box-container-footer {
       display: flex;
       flex-direction: column;
+    }
+    .container-qty{
+      width: 50%;
+    }
+    .container-qty {
+      width: 150px;
+    }
+    .qtybtn {
+      width: 260px;
+    }
+    .imagee-view {
+      height: 150px;
+    }
+  }
+  @media all and (max-width: 375px) {
+    .addToCart {
+      width: 150%;
     }
   }
   @media all and (max-width: 320px) {
@@ -1063,6 +1105,12 @@ a:hover {
     .create span {
       display: flex;
       flex-direction: column;
+    }
+    .footer {
+      margin-top: 120px;
+    }
+    .addToCart {
+      width: 110%;
     }
   }
 }
