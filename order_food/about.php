@@ -2,6 +2,7 @@
 <?php include './header.php'?>
 
 <!--about--> 
+<script src="./javascript.js"></script>
 <section class="about" id="about">
 
     

@@ -1,6 +1,6 @@
 <?php include 'partials-front/menu.php';?>
 
-
+<script src="./javascript.js"></script>
 
     <!-- CAtegories Section Starts Here -->
     <section class="categories">

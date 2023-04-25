@@ -1,5 +1,6 @@
 
 <?php include './header.php';?>
+<script src="./javascript.js"></script>
 
 <form action="placeOrder.php" method="POST">
 

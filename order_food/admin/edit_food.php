@@ -69,7 +69,7 @@ else{
 <span class="icon">
     <i class="fa-solid fa-utensils"  style="font-size: 1.75rem; color:black;"></i>
 </span>
-<span class="title" style="font-family: 'Dancing Script', cursive; font-size:1.75rem;font-weight:bold; margin-top:5px">Food Delicious</span>
+<span class="title" style="font-family: 'Dancing Script', cursive; font-size:1.75rem;font-weight:bold; margin-top:5px"> Delicious Food</span>
 </div>
 
     <h1 class="h1_category"><span>Update</span> product </h1>

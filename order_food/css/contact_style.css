@@ -176,6 +176,13 @@ footer-main > span {
 .navbar a {
   text-decoration: none;
 }
+
+@media all and (max-width: 1024px) {
+  .row {
+    padding: 0px;
+  }
+}
+
 @media all and (max-width: 768px) {
   .contact-text {
     padding-bottom: 0px;

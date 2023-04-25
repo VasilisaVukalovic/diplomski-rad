@@ -39,7 +39,7 @@ if(!isset($_SESSION['user']))
                         <span class="icon">
                              <i class="fa-solid fa-utensils"  style="font-size: 1.75rem;"></i>
                         </span>
-                        <span class="title" style="font-family: 'Dancing Script', cursive; font-size:1.75rem;font-weight:bold;">Food Delicious</span>
+                        <span class="title" style="font-family: 'Dancing Script', cursive; font-size:1.75rem;font-weight:bold;">Delicious Food</span>
                     </a>
                 </li>
 

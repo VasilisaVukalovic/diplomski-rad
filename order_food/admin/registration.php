@@ -40,7 +40,7 @@
 <!-- header -->
 
 <header class="header" style="border-bottom: 1px solid var(--secondary-color);">
-    <a href="#" class="logo"><i class="fas fa-bread-slice"></i>Food Delicious</a>
+    <a href="#" class="logo"><i class="fa-solid fa-utensils"></i> Delicious Food</a>
 
     <nav class="navbar" style="margin-right: 60px; word-spacing: 15px;">
         <a href="../index.php">Home</a>

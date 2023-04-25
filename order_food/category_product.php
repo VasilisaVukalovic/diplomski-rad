@@ -1,4 +1,5 @@
 <?php include './header.php';?>
+<script src="./javascript.js"></script>
 <?php 
 if(isset($_GET['id']))
 {

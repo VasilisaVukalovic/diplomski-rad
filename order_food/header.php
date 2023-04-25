@@ -45,12 +45,13 @@ if(isset($_SESSION['user']))
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 <script src="./searchjs.js"></script>
 
+
 </head>
 <body>
 <!-- header -->
 
 <header class="header" id="header">
-    <a href="./index.php" class="logo" id="logo"><i class="fas fa-bread-slice"></i>Food Delicious</a>
+    <a href="./index.php" class="logo" id="logo"><i class="fa-solid fa-utensils"></i> Delicious Food</a>
 
     <nav class="navbar">
         <a href="./index.php">Home</a>
@@ -163,25 +164,25 @@ if(isset($_SESSION['user']))
  
  <div id="close-form" class="fas fa-times"></div>
  <h3 class="title" style="background:var(--primary-color); color:white; border-radius:.5rem; text-align:left;padding:8px;">checkout</h3>
- <div id="cartItem" style="font-size:20px;">You cart is empty</div>
+<!-- <div id="cartItem" style="font-size:20px;">You cart is empty</div>-->
  
  <div class="cart-item">
     
      <span class="fas fa-times"></span>
-     <img src="foods_image/burger.jpg" alt="">
+     <!--<img src="foods_image/burger.jpg" alt="">
      <div class="content">
          <h3>bakery item 1</h3>
          <div class="price">$45.99/-</div>
      </div>
-     
+    -->
  </div>
- <div class="foot">
+ <!--<div class="foot">
          <h3>Total:</h3>
          <h2 id="total">$0.00</h2>
-     </div>
+     </div>-->
  
  
- <a href="#" class="btnn"> checkout </a>
+ <!--<a href="#" class="btnn"> checkout </a>-->
  
  </div>
  

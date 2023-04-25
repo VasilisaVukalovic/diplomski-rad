@@ -58,7 +58,7 @@ if(isset($_SESSION['user']))
     
 </head>
 <body>
-<a href="#" class="logo"><i class="fa-solid fa-utensils"></i> Food Delicious</a>
+<a href="#" class="logo"><i class="fa-solid fa-utensils"></i> Delicious Food</a>
 
 <div class="container">
 <p>The best for
@@ -66,7 +66,7 @@ if(isset($_SESSION['user']))
 </p>
 <div class="box" style="box-shadow:0 1.5rem 2rem rgba(0, 0, 0, 0.1); text-align:center; width:55%; margin-left:30%; height:100%;padding:10px">
 <br><br>
-<a href="#" class="logo"><i class="fa-solid fa-utensils"></i> Food Delicious</a>
+<a href="#" class="logo"><i class="fa-solid fa-utensils"></i> Delicious Food</a>
 <p class="paragraf">Continue as a guest to view the menu,and if you want to order, 
     <br>  you need to have an account</p>
 <a href="./admin/login3.php" name="login" style="color:white; border:1px solid white;padding:5px; border-radius:20px;text-decoration:none;">Login or create account</a>

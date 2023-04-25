@@ -1,6 +1,7 @@
 
 
 <?php include './header.php';?>
+<script src="./javascript.js"></script>
 
 <?php
 
@@ -43,7 +44,6 @@ if(isset($_SESSION['user']))
     <table class="my_cart">
     <thead>
         <tr>
-           
             <th>Image</th>
             <th>Name</th>
             <th>Qty</th>
@@ -74,7 +74,7 @@ if(isset($_SESSION['user']))
             ?>
 
             <tr>
-                <td style="width:15%">
+                <td class="cart-img">
                 <?php  
                     //provjera da li imamo slliku ili ne
                     if($image_name=="")
@@ -86,15 +86,15 @@ if(isset($_SESSION['user']))
                     {
                     //imamo sliku,prikazi je
                     ?>
-                    <img src="./images/food/<?php echo $image_name; ?>" alt="slika nije ucitana" name="image" style="width: 100%;height: 25rem;padding: 12px;">
+                    <img src="./images/food/<?php echo $image_name; ?>" alt="slika nije ucitana" name="image">
                     <?php
                     }
                     ?>
             
                 </td>
-                <td style="width:15%;text-align:center;font-size:20px" name="food"><?php echo $food;?></td>
+                <td name="food"><?php echo $food;?></td>
                 <td><input type="hidden" name="product_id" value="<?php echo $cart_id;?>">
-                    <input type="number"  id ="qty" name="qty" min="1" max="10" style="border:1px solid var(--primary-color); width:40%;margin-left:10px" onchange="quantityfunction(this)" value="<?php echo $qty;?>"></td>
+                    <input type="number" id ="qty" name="qty" min="1" max="10" style="border:1px solid var(--primary-color); width:40%;margin-left:10px" onchange="quantityfunction(this)" value="<?php echo $qty;?>"></td>
 
                 
                 <td><input type="text"  id ="price" name="price" onkeyup="pricefunction(this)"  value="<?php echo $price;?>"></td>
@@ -102,7 +102,7 @@ if(isset($_SESSION['user']))
 
                 <td><textarea name="desc" placeholder="If you want something from the attachment, you can list it here!🙂" style="height:18rem; color:var(--secondary-color); border:1px solid var(--secondary-color); background-color:transparent;"></textarea></td>
                 
-                <td style="width:15%;text-align:center"><a href="delete_cart.php?id=<?php echo $cart_id; ?>" class="fa-solid fa-trash-can" style="color:var(--secondary-color);"></a>
+                <td><a href="delete_cart.php?id=<?php echo $cart_id; ?>" class="fa-solid fa-trash-can" style="color:var(--secondary-color);"></a>
                 <button name="update" style="font-size:17px; color:var(--secondary-color);"><i class='fa-regular fa-pen-to-square'></i></button>
                 </td>
 

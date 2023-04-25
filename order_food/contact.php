@@ -9,6 +9,7 @@
 <link href="css/contact_style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<script src="./javascript.js"></script>
 <div class="footer">
   <div class="container">
     <div class="footer-inner">
