@@ -716,7 +716,17 @@ table {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-
+tfoot>tr:last-child,body > form > table > tfoot > tr > td:nth-child(1) {
+  color: var(--secondary-color);
+  background-color: var(--white);
+}
+tfoot>tr:last-child:hover> td:hover,#total,body > form > table > tfoot > tr > td:nth-child(3){
+  color: var(--secondary-color);
+  background-color: var(--white);
+}
+thead> {
+  color: var(--secondary-color);
+}
 table th {
   padding: 10px;
   font-size: 16px;
@@ -726,6 +736,7 @@ table th {
 table:hover th {
   color: var(--secondary-color);
 }
+
 table tr:hover th {
   color: var(--white);
 }
@@ -760,6 +771,7 @@ table tr:hover {
   color: var(--primary-color);
   font: var(--primary-color);
 }
+
 table td input {
   font-size: 18px;
   color: var(--secondary-color);
@@ -788,18 +800,23 @@ table td input {
   text-decoration: none;
   font-size: 16px;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--white);
   border-radius: 8px;
-  border: 1px solid var(--secondary-color);
+  border: 1px solid var(--white);
   border-radius: 8px;
   font-weight: bold;
 }
 #btn-procced-check > a:hover {
-  background-color: var(--white);
-  color: green;
+  background-color:var(--white);
+  color: var(--primary-color);
   border: 1px solid var(--secondary-color);
 }
-
+ tfoot {
+  background-color: var(--primary-color) !important;
+}
+tfoot:hover {
+  background-color: var(--white) !important;
+}
 /*checkout*/
 .checkout {
   margin-top: 10%;
@@ -830,12 +847,15 @@ table td input {
 }
 #input {
   border: 2px solid #777;
-  width: 600px;
+  width: 400px;
   padding: 5px;
   margin-top: 5px;
 }
 .checkout .card-checkout .detail {
   padding-top: 12px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .card-checkout #input,
 #textarea {
@@ -843,7 +863,7 @@ table td input {
 }
 .card-checkout #input:hover,
 #textarea:hover {
-  border: 2px solid green;
+  border: 2px solid var(--primary-color);
 }
 .checkout .card-checkout .detail #label {
   margin-top: 10px;
@@ -852,7 +872,7 @@ table td input {
 }
 #textarea {
   border: 1px solid grey;
-  width: 600px;
+  width: 400px;
   height: 80px;
 }
 .box {
@@ -876,8 +896,9 @@ table td input {
   border-bottom: 1px solid grey;
 }
 .labela {
-  margin-top: 25px;
-  margin-left: 65px;
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
   font-size: 18px;
 }
 .total {
@@ -890,17 +911,20 @@ table td input {
   font-size: 19px;
 }
 #btn-confirm {
-  background-color: blue;
-  opacity: 0.6;
+  background-color: var(--primary-color);
+  height: 60px;
   padding: 10px;
-  color: white;
+  color: green;
   font-size: 15px;
-  border: 1px solid black;
+  border: 1px solid green;
   border-radius: 8px;
+  font-weight: bold;
 }
 #btn-confirm:hover {
   cursor: grab;
-  opacity: 1;
+  background-color: green;
+  color: var(--white);
+  border: 1px solid var(--white);
 }
 .card-empty {
   margin-top: 20%;
@@ -1047,8 +1071,6 @@ a:hover {
   body > form > table > thead > tr > th:nth-child(4){
     width: 12px;
   }
-}
-@media all and (max-width: 1024px) {
   .box-container-products-view {
     height: 410px !important;
   }
@@ -1058,6 +1080,9 @@ a:hover {
   }
   .dropdown-content {
     z-index: 1;
+  }
+  .checkout {
+    grid-template-columns: 1fr;
   }
 }
 @media all and (max-width: 768px) {
@@ -1129,6 +1154,14 @@ a:hover {
     .titleh4 {
       margin-top:10px;
     }
+    .checkout, form {
+      width: max-content;
+    }
+    .box {
+      width: max-content;
+    }
+    
+
   }
   @media all and (max-width: 375px) {
     .addToCart {

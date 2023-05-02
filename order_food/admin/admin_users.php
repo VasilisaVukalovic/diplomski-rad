@@ -36,13 +36,13 @@
 </script>
 
 <span class="add1">
-<i class="fa-solid fa-plus" style="color:white"></i>
-<a href="add_user.php" class="add">Add new user</a>
+
+<a href="add_user.php" class="add"><i class="fa-solid fa-plus" style="color:white"></i> Add new user</a>
 </span>
 <table class="tabela">
 <thead>
     <tr>
-        <th>S.n.</th>
+        
         <th>Username</th>
         <th>Firstname</th>
         <th>Lastname</th>
@@ -55,6 +55,7 @@
     </tr>
 </thead>
 <tbody>
+    
     <?php
 
     $sql="SELECT * FROM users";
@@ -85,7 +86,7 @@
          
             ?>
             <tr>
-                <td><?php echo $sn++;?>.</td>
+                
                 <td><?php echo $username;?></td>
                 <td><?php echo $firstname;?></td>
                 <td><?php echo $lastname;?></td>

@@ -9,16 +9,16 @@
              <span class="title" style="font-family: 'Dancing Script', cursive; font-size:2.5rem; font-weight:bold; color:var(--secondary-color);"> Food Delicious</span>
             
             <div class="share">
-                <a href="www.facebook.com" class="fab fa-facebook-f"></a>
-                <a href="https://www.linkedin.com/" class="fab fa-twitter"></a>
-                <a href="www.instagra.com" class="fab fa-instagram"></a>
+                <a href="http://www.facebook.com" class="fab fa-facebook-f"></a>
+                <a href="http://www.twitter.com" class="fab fa-twitter"></a>
+                <a href="http://www.instagram.com" class="fab fa-instagram"></a>
             </div>
         </div>
 
         <div class="box-footer">
             <h3>Address</h3>
-            <p>Vuka Karadzica 10</p>
-            <p>Trebinje 89101</p>
+            <p>Vuka Karadzica 30</p>
+            <p>Lukavica, 71 123</p>
             <p>Bosna i Hercegovina</p>
             <p>fooddelivery@gmail.com</p>
             <p>+387 66 123 098</p>
@@ -29,10 +29,10 @@
            
             <h3>Links</h3>
             <ul type="none" class="link">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="./home_page.php">Home</a></li>
+                <li><a href="./about.php">About us</a></li>
                 <li><a href="#">Category</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./contact.php">Contact</a></li>
             </ul>
             
             
